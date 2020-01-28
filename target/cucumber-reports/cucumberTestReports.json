@@ -1,0 +1,93 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-28T17:20:11.651Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9891800600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify title of Home Page",
+        "description": "",
+        "id": "home-page-testing;verify-title-of-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1282896100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1676963800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens home page",
+            "match": {
+              "location": "HomePage_STEPS.user_opens_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 683900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verifies title is \"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePage_STEPS.verifies_title_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@homePage"
+          },
+          {
+            "name": "@verifytitle"
+          }
+        ]
+      }
+    ],
+    "name": "Home page Testing",
+    "description": "",
+    "id": "home-page-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/homePage.feature",
+    "tags": [
+      {
+        "name": "@homePage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
