@@ -36,11 +36,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-<<<<<<< HEAD
   "name": "Verifies title is \"Meet Guru99 - Free Training Tutorials \u0026 Video for IT Courses\"",
-=======
-  "name": "Verifies title is \"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"",
->>>>>>> cf23fc1f16fb7a3cc467c5bf64d224ace3d4ebb4
   "keyword": "Then "
 });
 formatter.match({

@@ -3,19 +3,11 @@
     "line": 2,
     "elements": [
       {
-<<<<<<< HEAD
-        "start_timestamp": "2020-01-29T21:43:47.210Z",
+        "start_timestamp": "2020-01-29T22:07:18.019Z",
         "before": [
           {
             "result": {
-              "duration": 3362704762,
-=======
-        "start_timestamp": "2020-01-28T17:20:11.651Z",
-        "before": [
-          {
-            "result": {
-              "duration": 9891800600,
->>>>>>> cf23fc1f16fb7a3cc467c5bf64d224ace3d4ebb4
+              "duration": 3037554516,
               "status": "passed"
             },
             "match": {
@@ -30,11 +22,7 @@
         "after": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 147823688,
-=======
-              "duration": 1282896100,
->>>>>>> cf23fc1f16fb7a3cc467c5bf64d224ace3d4ebb4
+              "duration": 220323074,
               "status": "passed"
             },
             "match": {
@@ -47,11 +35,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 1899222431,
-=======
-              "duration": 1676963800,
->>>>>>> cf23fc1f16fb7a3cc467c5bf64d224ace3d4ebb4
+              "duration": 1913902462,
               "status": "passed"
             },
             "line": 5,
@@ -63,8 +47,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 240826076,
+              "duration": 193917988,
               "status": "passed"
             },
             "line": 6,
@@ -73,17 +56,6 @@
               "arguments": [
                 {
                   "val": "\"Meet Guru99 - Free Training Tutorials \u0026 Video for IT Courses\"",
-=======
-              "duration": 683900,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Verifies title is \"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"",
->>>>>>> cf23fc1f16fb7a3cc467c5bf64d224ace3d4ebb4
                   "offset": 18
                 }
               ],
