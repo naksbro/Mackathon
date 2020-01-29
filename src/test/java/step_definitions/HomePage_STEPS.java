@@ -21,6 +21,6 @@ public class HomePage_STEPS {
 
     @Then("Verifies title is {string}")
     public void verifies_title_is(String string) {
-        Assert.assertEquals(string, homePage_impl.getTitl);
+        Assert.assertEquals(string, homePage_impl.getTitle());
     }
 }
