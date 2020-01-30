@@ -1,4 +1,4 @@
-@homePage
+@homePage @fullTest
 Feature: Home page Testing
   @verifytitle
   Scenario: Verify title of Home Page

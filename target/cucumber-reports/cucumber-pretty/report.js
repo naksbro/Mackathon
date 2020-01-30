@@ -1,24 +1,27 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/homePage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/awsPage.feature");
 formatter.feature({
-  "name": "Home page Testing",
+  "name": "Java page testing",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@homePage"
+      "name": "@awsPage"
+    },
+    {
+      "name": "@fullTest"
     }
   ]
 });
 formatter.scenario({
-  "name": "Verify title of Home Page",
+  "name": "Verify title and trending courses of page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@homePage"
+      "name": "@awsPage"
     },
     {
-      "name": "@verifytitle"
+      "name": "@fullTest"
     }
   ]
 });
@@ -36,11 +39,51 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Verifies title is \"Meet Guru99 - Free Training Tutorials \u0026 Video for IT Courses\"",
+  "name": "User navigates to \"Cucumber\" page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CucumberPage_STEPS.user_navigates_to_page(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User navigates to \"Java\" page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CucumberPage_STEPS.user_navigates_to_page(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User navigates to \"AWS\" page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CucumberPage_STEPS.user_navigates_to_page(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verifies title is \"AWS(Amazon Web Services) Tutorial for Beginners: Learn in 2 Hours\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "HomePage_STEPS.verifies_title_is(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verifies \"AWS\" page Trending courses",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CucumberPage_STEPS.verifies_page_Trending_courses(String)"
 });
 formatter.result({
   "status": "passed"

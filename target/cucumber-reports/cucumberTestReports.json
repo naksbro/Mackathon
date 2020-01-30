@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-29T22:07:18.019Z",
+        "start_timestamp": "2020-01-30T20:50:27.939Z",
         "before": [
           {
             "result": {
-              "duration": 3037554516,
+              "duration": 3395061851,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Verify title of Home Page",
+        "line": 3,
+        "name": "Verify title and trending courses of page",
         "description": "",
-        "id": "home-page-testing;verify-title-of-home-page",
+        "id": "java-page-testing;verify-title-and-trending-courses-of-page",
         "after": [
           {
             "result": {
-              "duration": 220323074,
+              "duration": 317131619,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1913902462,
+              "duration": 1857151658,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "User opens home page",
             "match": {
               "location": "HomePage_STEPS.user_opens_home_page()"
@@ -47,45 +47,125 @@
           },
           {
             "result": {
-              "duration": 193917988,
+              "duration": 15569010879,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Verifies title is \"Meet Guru99 - Free Training Tutorials \u0026 Video for IT Courses\"",
+            "line": 5,
+            "name": "User navigates to \"Cucumber\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Meet Guru99 - Free Training Tutorials \u0026 Video for IT Courses\"",
+                  "val": "\"Cucumber\"",
+                  "offset": 18
+                }
+              ],
+              "location": "CucumberPage_STEPS.user_navigates_to_page(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2443505944,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to \"Java\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Java\"",
+                  "offset": 18
+                }
+              ],
+              "location": "CucumberPage_STEPS.user_navigates_to_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2212950424,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to \"AWS\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AWS\"",
+                  "offset": 18
+                }
+              ],
+              "location": "CucumberPage_STEPS.user_navigates_to_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68085268,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verifies title is \"AWS(Amazon Web Services) Tutorial for Beginners: Learn in 2 Hours\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AWS(Amazon Web Services) Tutorial for Beginners: Learn in 2 Hours\"",
                   "offset": 18
                 }
               ],
               "location": "HomePage_STEPS.verifies_title_is(String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 170929054,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verifies \"AWS\" page Trending courses",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AWS\"",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberPage_STEPS.verifies_page_Trending_courses(String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@homePage"
+            "name": "@awsPage"
           },
           {
-            "name": "@verifytitle"
+            "name": "@fullTest"
           }
         ]
       }
     ],
-    "name": "Home page Testing",
+    "name": "Java page testing",
     "description": "",
-    "id": "home-page-testing",
+    "id": "java-page-testing",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/homePage.feature",
+    "uri": "file:src/test/resources/features/awsPage.feature",
     "tags": [
       {
-        "name": "@homePage",
+        "name": "@awsPage",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@fullTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 10
         }
       }
     ]
